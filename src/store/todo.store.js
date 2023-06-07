@@ -98,7 +98,7 @@ const deleteTodo = ( todoId ) => {
 
 const deleteTodoCompleted = () => {
   
-  state.todos = state.todos.filter( todo => todo.done );
+  state.todos = state.todos.filter( todo => !todo.done );
   saveStateToLocalStorage();
 }
 
