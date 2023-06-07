@@ -80,13 +80,13 @@ const setFilterTodo = ( newfilter = Filters.All ) => {
 }
 
 const getCurrentFilter = () => {
-  throw new Error('Not implement');
+  return state.filter;
 }
 
 
 
 export default {
-  
+
   addTodo,
   deleteTodo,
   deleteTodoCompleted,
